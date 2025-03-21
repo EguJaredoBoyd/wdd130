@@ -1,0 +1,105 @@
+/* Define CSS variables for colors */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #2980b9;
+    --accent-color: #ecf0f1;
+    --text-color: #333;
+    --background-color: #fff;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+}
+
+.logo {
+    height: 50px;
+}
+
+nav a {
+    color: var(--accent-color);
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 700;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: var(--accent-color);
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+.article-image {
+    float: right;
+    margin: 0 0 10px 10px;
+    width: 200px;
+}
+
+section {
+    padding: 20px;
+}
+
+section h2 {
+    color: var(--secondary-color);
+}
+
+section img {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    margin: 0 5px;
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+/* Clearfix for floated elements */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}

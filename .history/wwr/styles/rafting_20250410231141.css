@@ -1,13 +1,13 @@
-/* ========== Color Variables ========== */
+/* Define CSS variables for colors */
 :root {
     --primary-color: #585123;
-    --secondary-color: #eec170;
-    --accent-color: #f2a65a;
-    --text-color: #f58549;
-    --background-color: #ffffff;
+    --secondary-color: #EEC170;
+    --accent-color: #F2A65A;
+    --text-color: #F58549;
+    --background-color: #fff;
 }
 
-/* ========== Global Styles ========== */
+/* Global Styles */
 body {
     font-family: 'Open Sans', sans-serif;
     color: var(--text-color);
@@ -16,19 +16,13 @@ body {
     padding: 0;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-/* ========== Header ========== */
+/* Header */
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: var(--primary-color);
     padding: 15px 20px;
-    flex-wrap: wrap;
 }
 
 .logo {
@@ -38,17 +32,16 @@ header {
 header h1 {
     color: var(--secondary-color);
     font-size: 1.8em;
-    margin: 0 auto;
+    text-align: center;
 }
 
-/* ========== Navigation ========== */
+/* Navigation */
 nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
     padding: 0;
     margin: 0;
-    flex-wrap: wrap;
 }
 
 nav ul li {
@@ -57,6 +50,7 @@ nav ul li {
 
 nav a {
     color: var(--accent-color);
+    text-decoration: none;
     font-weight: 700;
     transition: color 0.3s ease-in-out;
 }
@@ -66,7 +60,7 @@ nav a.active {
     color: var(--secondary-color);
 }
 
-/* ========== Hero Section ========== */
+/* Hero Section */
 .hero {
     position: relative;
     text-align: center;
@@ -85,12 +79,30 @@ nav a.active {
     transform: translate(-50%, -50%);
     font-size: 3em;
     background-color: rgba(0, 0, 0, 0.6);
-    color: white;
     padding: 10px;
+    color: white;
     border-radius: 8px;
 }
 
-/* ========== Sections ========== */
+/* Mission Article */
+article {
+    display: flex;
+    align-items: center;
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+.article-image {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+/* Sections */
 section {
     padding: 30px;
     text-align: center;
@@ -102,55 +114,7 @@ section h2 {
     margin-bottom: 15px;
 }
 
-/* ========== Call-to-Action Button ========== */
-.btn {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    display: inline-block;
-    transition: background 0.3s;
-}
-
-.btn:hover {
-    background-color: var(--accent-color);
-}
-
-/* ========== Newsletter Form ========== */
-.newsletter form {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-top: 1rem;
-}
-
-.newsletter input {
-    padding: 0.5rem;
-    font-size: 1rem;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-/* ========== Mission Article ========== */
-article {
-    display: flex;
-    align-items: center;
-    background-color: var(--secondary-color);
-    padding: 20px;
-    border-radius: 10px;
-    margin: 20px auto;
-    max-width: 900px;
-    flex-wrap: wrap;
-}
-
-.article-image {
-    width: 200px;
-    margin-right: 20px;
-    border-radius: 8px;
-}
-
-/* ========== Adventure Gallery ========== */
+/* Adventure Section */
 .adventure-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -178,25 +142,9 @@ figcaption {
     color: var(--text-color);
 }
 
-/* ========== Trip Grid (Trips Page) ========== */
-.trips-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    padding: 2rem;
-}
-
-.trips-grid article {
-    border: 1px solid #ccc;
-    padding: 1rem;
-    border-radius: 8px;
-    text-align: center;
-    background-color: var(--background-color);
-}
-
-/* ========== Contact Page ========== */
+/* Contact Page Styles */
 .company-info {
-    background-color: var(--secondary-color);
+    background: var(--secondary-color);
     padding: 20px;
     border-radius: 8px;
 }
@@ -206,7 +154,7 @@ figcaption {
     margin: 5px 0;
 }
 
-/* ========== Employee Gallery ========== */
+/* Employee Section */
 .employees {
     padding: 20px;
 }
@@ -215,7 +163,6 @@ figcaption {
     display: flex;
     justify-content: center;
     gap: 20px;
-    flex-wrap: wrap;
 }
 
 .employee-gallery figure {
@@ -232,9 +179,9 @@ figcaption {
     border-radius: 50%;
 }
 
-/* ========== Contact Form ========== */
+/* Contact Form */
 .contact-form {
-    background-color: var(--secondary-color);
+    background: var(--secondary-color);
     padding: 20px;
     border-radius: 10px;
     max-width: 600px;
@@ -271,7 +218,7 @@ fieldset label {
 }
 
 button {
-    background-color: var(--primary-color);
+    background: var(--primary-color);
     color: white;
     padding: 10px;
     border: none;
@@ -282,10 +229,10 @@ button {
 }
 
 button:hover {
-    background-color: var(--accent-color);
+    background: var(--accent-color);
 }
 
-/* ========== Footer ========== */
+/* Footer */
 footer {
     background-color: var(--primary-color);
     color: var(--accent-color);
@@ -318,7 +265,7 @@ footer img:hover {
     transform: scale(1.1);
 }
 
-/* ========== Responsive Design ========== */
+/* Responsive Design */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -341,7 +288,10 @@ footer img:hover {
 
     .article-image {
         width: 150px;
-        margin: 0 auto 15px;
+    }
+
+    .adventure-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
 
     .employee-gallery {

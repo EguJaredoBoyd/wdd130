@@ -9,14 +9,16 @@
     <meta name="author" content="Egu Chidiebere Jared">
     <title>Contact Us - Whitewater Rafting Company</title>
     <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap"
         rel="stylesheet">
     <!-- CSS Stylesheet -->
-    <link rel="stylesheet" href="./styles/rafting.css">
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
-    <header>
+    <header class="header-nav">
         <img src="images/rafting1.jpg" alt="Whitewater Rafting Company Logo" class="logo">
         <h1>Whitewater Rafting</h1>
         <nav>
@@ -32,27 +34,27 @@
     <main>
         <h2>Contact Us</h2>
 
-        <section class="company-info">
+        <section class="section contact-info">
             <h3>Our Information</h3>
             <p><strong>Address:</strong> 123 River Rapids Rd, Adventure City, USA</p>
             <p><strong>Phone:</strong> (123) 456-7890</p>
             <p><strong>Email:</strong> info@whitewaterrafting.com</p>
 
             <h3>Find Us Here</h3>
-            <iframe src="https://www.google.com/maps/embed?..." width="1000" height="300" style="border:0;" allowfullscreen=""
+            <iframe src="https://www.google.com/maps/embed?..." width="1000" height="300" allowfullscreen=""
                 loading="lazy"></iframe>
         </section>
 
-        <section class="employees">
+        <section class="section employees">
             <h3>Meet Our Team</h3>
-            <div class="employee-gallery">
+            <div class="gallery employee-gallery">
                 <figure>
                     <img src="./images/employee1.jpg" alt="John Doe">
                     <figcaption>Jared Boyd- Lead Guide</figcaption>
                 </figure>
                 <figure>
                     <img src="./images/employee2.jpg" alt="Jane Smith">
-                    <figcaption>Jane Smith - Customer Support</figcaption>
+                    <figcaption>Jane Michael - Customer Support</figcaption>
                 </figure>
                 <figure>
                     <img src="./images/employee3.webp" alt="Mike Johnson">
@@ -61,7 +63,7 @@
             </div>
         </section>
 
-        <section class="contact-form">
+        <section class="section contact-form">
             <h3>Send Us a Message</h3>
             <form action="#" method="post">
                 <label for="name">Full Name:</label>
@@ -72,15 +74,19 @@
 
                 <fieldset>
                     <legend>Purpose of Message:</legend>
-                    <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
-                    <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
-                    <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+                    <label><input type="radio" id="general" name="purpose" value="general" required> General
+                        Inquiry</label>
+                    <label><input type="radio" id="reservation" name="purpose" value="reservation"> Reservation
+                        Question</label>
+                    <label><input type="radio" id="suggestion" name="purpose" value="suggestion"> Website
+                        Suggestion</label>
                 </fieldset>
 
                 <label for="message">Your Message:</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
 
-                <label><input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter</label>
+                <label><input type="checkbox" id="subscribe" name="subscribe"> Please subscribe me to the monthly
+                    newsletter</label>
 
                 <button type="submit">Send Message</button>
             </form>
@@ -91,11 +97,4 @@
         <p>&copy; 2025 Whitewater Rafting Company | Designed by Egu Chidiebere Jared</p>
         <div class="social-icons">
             <a href="https://facebook.com" target="_blank"><img src="images/facebookIcon.webp" alt="Facebook"></a>
-            <a href="https://twitter.com" target="_blank"><img src="images/twitterIcon.webp" alt="Twitter"></a>
-            <a href="https://instagram.com" target="_blank"><img src="images/instagramIcon.webp" alt="Instagram"></a>
-        </div>
-        <p><a href="images/contact-wireframe.png" target="_blank">View Contact Page Wireframe</a></p>
-    </footer>
-</body>
-
-</html>
+            <a href="https://twitter.com" target
